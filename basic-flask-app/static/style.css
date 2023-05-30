@@ -1,0 +1,150 @@
+* {
+    scroll-behavior: smooth;
+}
+/*------------------------FOOTER----------------------------------*/
+footer{
+    width: 100%;
+}
+.footer-line {
+    border: none;
+    border-top: 2px solid white;
+    margin: 0;
+}
+/*------------------------BODY----------------------------------*/
+body {
+    background: linear-gradient(-45deg,#000033, #05345D, #006699);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: transparent  !important;
+    border: 1px solid transparent !important;
+}
+.line-shape {
+    left: 50%;
+    width: 70%;
+    height: 30%;
+    background-color: none ;
+    border-color: white;
+    border : 1px solid white;
+}
+.glow-on-hover {
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+  .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg,#009966,#009999,#0099CC,#0099FF);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 10s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+      
+     
+  }
+  
+  .glow-on-hover:active {
+   
+      color: #000
+  }
+  
+  .glow-on-hover:active:after {
+      background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+      opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+      
+  }
+  
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }
+  
+  
+  .Title{
+      color : white;
+      font-family: 'Open Sans', sans-serif;
+  }
+  
+  .custom-file-upload {
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      background-color: none;
+    }
+    .custom-file-upload:hover {
+      background-color: none;
+    }
+    .custom-file-upload img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    #file-upload {
+      display: none;
+    }
+    
+  #centrer{
+      margin-top: 30%;
+      
+  }
+
+/* Example CSS styling for flashed messages */
+ul.flashes {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffcccc;
+    color: #cc0000;
+    font-weight: bold;
+}

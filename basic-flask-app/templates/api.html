@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="{{url_for ('static',filename = 'style.css')}}">
+    <link rel="icon" href="{{url_for ('static',filename = 'logo.ico')}}" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="{{url_for ('static',filename = 'script.js')}}"></script>
+    <title>Blue Legion - API</title>
+</head>
+<body>
+    <header name="header" id="header">
+        <center>
+            <a href="/">
+                <img id="image_logo" 
+                src="{{url_for ('static',filename = 'logo.png')}}" 
+                width="140" 
+                height="67" 
+                alt="Upload Icon"/>
+            </a>
+        </center>
+    </header>
+    <div class= "container" style ="justify-content: center; align-items: center;"  >
+        <center>
+            <h1 class="Title"> Blue Legion </h1>
+            <p class="Title"> Outil d'analyse et de detection de malware </p>
+        </center>
+    </div> <!-- Container-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+        <hr class="footer-line">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Tools</h6>
+                <p><a class="text-white" href="/static">Static</a></p>
+                <p><a class="text-white" href="/behav">Behavior</a></p>
+                <p><a class="text-white" href="/api">API Service</a></p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                <p><a class="text-white" href="../static/pfe__Copy_-2.pdf">Documentation</a></p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> Bab Ezzouar USTHB, Alger</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+            <hr class="my-3">
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0" style="display: flex; justify-content: center; align-items: center;">
+                <p>&copy; 2023 Blue Legion Copyright</p>
+            </section>
+        <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+    <!-- End Footer -->
+    </div>
+    <!-- End of .container -->
+</body>
+</html>

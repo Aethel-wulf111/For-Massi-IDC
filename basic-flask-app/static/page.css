@@ -1,0 +1,166 @@
+/*------------------------FOOTER----------------------------------*/
+footer{
+    width: 100%;
+}
+.footer-line {
+    border: none;
+    border-top: 2px solid white;
+    margin: 0;
+}
+/*-----------------------------Cercle------------------------------*/
+.circle{
+	flex: 1px;
+	margin-right: 20px;
+	margin-left: 25%;
+}
+.circle-border {
+	stroke-dasharray: 565.48;
+	stroke-dashoffset: 0;
+	animation: circle-border-animation 3s linear forwards;
+}
+
+@keyframes circle-border-animation {
+	0% {
+		stroke-dashoffset: 565.48;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+.circle-fill {
+	stroke-dasharray: 565.48;
+	stroke-dashoffset: 565.48;
+	animation: circle-fill-animation 3s linear forwards;
+}
+
+@keyframes circle-fill-animation {
+	0% {
+		stroke-dashoffset: 565.48;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+.container1{
+	display: flexbox;
+	margin-top: 3%;
+}
+/*------------------------Titre -----------------------------------------*/
+.Title1{
+	padding-top: 12%;
+	margin-left: 12%;
+	font-family: "Inter", Helvetica;
+	font-size: medium;
+	color: white;
+
+}
+.Title{
+	margin-top: 10%;
+	margin-left: 12%;
+	font-family: "Inter", Helvetica;
+	font-size: medium;
+	color: white;
+	opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.ransomware-analyst {
+    color: #7294fa;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.40px;
+    line-height: 24px;
+	margin-top: 3%;
+    text-align: center;
+    white-space: nowrap;
+}
+.big_title{
+	color: #eeeff1;
+    font-family: "Inter", Helvetica;
+    font-size: 60px;
+    font-weight: 800;
+    width: 100%;
+	margin-top: 1%;
+	margin-bottom: 3%;
+    letter-spacing: -0.90px;
+    line-height: 40px;
+    text-align: center;
+    white-space: nowrap;
+}
+/*-------------------------Tableau Description------------------------------*/
+.container2 {
+	position: relative;
+	z-index: -1;
+	margin-top: -50px; /* Adjust this value as needed */
+	margin-bottom: 5%;
+}
+.desc{
+	flex:1;
+	margin-left: 3%;
+	border-color: transparent;
+}
+#desc{
+	border-spacing: 0 !important;
+	font-family: "Inter", Helvetica;
+	font-size: 11pt;
+	color : white;
+	width: 42.5%;
+}
+#desc td{
+	border: 1px solid transparent;	
+}
+#hash, #date, #type, #size{
+	padding-left: 2%;
+}
+/*-------------------------Tableau Résultat---------------------------------*/
+.customers{
+	padding-left: 17%;
+	padding-right: 8%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+#customers {
+	border-spacing: 0 !important;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11pt;
+	color : white;
+	width: 100%;
+}
+#customers td{
+	border: 1px solid rgba(255, 255, 255, 0.33);
+}
+#customers tr:hover {
+	background-color: transparent; opacity: 0.5;
+}
+#idk, #nnn, #aaa{
+	padding-left: 2%;
+}
+/*------------------------BODY----------------------------------*/
+body {
+	background: linear-gradient(-45deg,#000033, #05345D, #006699);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*-------------------LAST PARAGRAPH----------------------------*/
+#pdf{
+	margin-top: 0%;
+	padding-left: 17%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-family: "Inter", Helvetica;
+	font-size: medium;
+	color: white;
+	opacity: 1;
+    transition: opacity 0.3s ease;
+}
